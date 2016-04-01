@@ -1,10 +1,25 @@
 {
   "name": "meteor-react",
-  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "meteor run"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ldechamps/meteor-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ldechamps/meteor-react/issues"
+  },
+  "homepage": "https://github.com/ldechamps/meteor-react#readme",
   "dependencies": {
-    "meteor-node-stubs": "~0.2.0"
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "react-mounter": "^1.1.0"
   }
 }
