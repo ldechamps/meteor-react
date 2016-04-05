@@ -22,6 +22,5 @@ insecure                # Allow all DB writes from clients (for prototyping)
 accounts-password
 twbs:bootstrap
 kadira:flow-router
-kadira:react-layout    # a supprimer
 fortawesome:fontawesome
 momentjs:moment

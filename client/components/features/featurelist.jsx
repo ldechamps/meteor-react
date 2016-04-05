@@ -1,14 +1,16 @@
 import React from 'react';
 
-Featurelist = React.createClass({
-    features: [
-        {icon:"fa fa-image fa-2x",bigtext:"See photos and update", littletext:"form friends in News Feed"},
-        {icon:"fa fa-share fa-2x",bigtext:"Share what\'s new", littletext:"in your life on your Timeline"},
-        {icon:"fa fa-search fa-2x",bigtext:"Find more", littletext:"of what you\'re looking for with Fakebook search"}
-        
-    ],
+export default class Featurelist extends React.Component {
+    getFeatures() {
+        return [
+            {icon:"fa fa-image fa-2x",bigtext:"See photos and update", littletext:"form friends in News Feed"},
+            {icon:"fa fa-share fa-2x",bigtext:"Share what\'s new", littletext:"in your life on your Timeline"},
+            {icon:"fa fa-search fa-2x",bigtext:"Find more", littletext:"of what you\'re looking for with Fakebook search"}    
+        ];
+    }
+    
     render(){
-            var rows = this.features.map((feature) => {
+            var rows = this.getFeatures().map((feature) => {
                 return (
                     <li key={feature.icon}>
                         <h3 className="btn btn-lg">
@@ -33,4 +35,4 @@ Featurelist = React.createClass({
                 </div>
             )
     }
-});
+};

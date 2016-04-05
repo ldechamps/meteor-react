@@ -1,7 +1,8 @@
 import {FlowRouter} from 'meteor/kadira:flow-router';
 import { mount } from 'react-mounter';
 // out reactLayout ?
-import Homelayout from '../../client/components/layout/home.jsx';
+import {Homelayout} from '../../components/layout/home.jsx';
+import {Layout} from '../../components/layout/layout.jsx';
 
 publicRoutes = FlowRouter.group({
     name:'publicroutes'
@@ -13,14 +14,16 @@ privateRoutes = FlowRouter.group({
 
 publicRoutes.route('/', {
     name:'Home',
-    action () { mount(Homelayout, {})}
+    action () { mount(Homelayout, {
+        
+    })}
 });
 
 privateRoutes.route('/dashboard', {
     name:'Dashboard',
     action () { mount(Layout, {
-        sidebar:<div>Sidebar</div>,
-        content:<div>Content</div>
+       // sidebar:<div>Sidebar</div>,
+       // content:<div>Content</div>
     })
     }
 })
