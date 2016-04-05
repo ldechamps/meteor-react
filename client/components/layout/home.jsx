@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-Homelayout = React.createClass({
+//Homelayout = React.createClass({
+export default class Homelayout extends Component {
     render(){
         return (
             <div>
@@ -18,4 +19,4 @@ Homelayout = React.createClass({
              </div>
         )
     }
-})
+}//)

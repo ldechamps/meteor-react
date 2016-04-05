@@ -1,6 +1,7 @@
 import {FlowRouter} from 'meteor/kadira:flow-router';
 import { mount } from 'react-mounter';
 // out reactLayout ?
+import Homelayout from '../../client/components/layout/home.jsx';
 
 publicRoutes = FlowRouter.group({
     name:'publicroutes'
