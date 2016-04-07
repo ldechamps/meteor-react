@@ -1,15 +1,25 @@
-import React from 'react';
+import React, {Component} from 'react';
+import Navbar from '../navbar/navbar.jsx';
 
-export const Layout = () => (
-    <div className="wrapper">
-        <div className="box">
-            <div className="srow row-offcanvas row-offcanvas-left push-down-50">
+export default class Layout extends Component {
+    constructor(props) {
+        super(props);
+    }
+    
+    
+    render () {
+        return (
+            <div className="wrapper">
+                <div className="box">
+                    <div className="srow row-offcanvas row-offcanvas-left push-down-50">
+                                <Navbar/>
+                                {this.props.sidebar}
+                                {this.props.content} 
+                        </div>
                 </div>
-        </div>
-    </div>               
-)
+            </div>               
+        )
+    }
+}
 
 
-         //       Navbar
-           //     {this.props.sidebar}
-             //   {this.props.content}

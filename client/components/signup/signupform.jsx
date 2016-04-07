@@ -9,8 +9,8 @@ export default class Signupform extends Component {
         return data;
     }
     
-    constructor (props) {
-        super(props);
+    constructor () {
+        super();
         
         
        //  this.setState({message:'', messageClass:''});
@@ -20,8 +20,7 @@ export default class Signupform extends Component {
         }
 
     }
-    
-    
+        
     displayError(message){
        this.setState({message:message, messageClass:'alert alert-danger registerError'});
     }
