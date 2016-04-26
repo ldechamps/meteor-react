@@ -12,15 +12,15 @@ export default class Sidebar extends Component {
         ]
     }
     
-    
-    render() {
-        var rows = this.getLinks().map(function (link) {
-            return (
+    renderLinks(){
+        return this.getLinks().map( (link) => (
                 <li key={link._id}>
                     <a href={link.href}><i className={link.icon}></i> {link.text}</a>
                 </li>
-            )
-        });
+            ));
+    }
+    
+    render() {
         return (
             <div className="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
                 <ul className="nav">
@@ -31,7 +31,7 @@ export default class Sidebar extends Component {
                     </li>
                 </ul>
                 <ul className="nav hidden-xs" id="lg-menu">
-                    {rows}
+                    {this.renderLinks()}
                 </ul>
             </div>
         )

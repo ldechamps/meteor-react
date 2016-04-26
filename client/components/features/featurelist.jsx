@@ -9,9 +9,9 @@ export default class Featurelist extends React.Component {
         ];
     }
     
-    render(){
-            var rows = this.getFeatures().map((feature) => {
-                return (
+    renderFeatures(){
+            return this.getFeatures().map((feature) => 
+                (
                     <li key={feature.icon}>
                         <h3 className="btn btn-lg">
                             <i  className={feature.icon}></i>
@@ -21,8 +21,11 @@ export default class Featurelist extends React.Component {
                             </span>
                         </h3>
                     </li>
-                )               
-            });
+                ));
+    }
+    
+    render(){
+
             return (
                 <div>
                     <h2 className="col-md-11 featurelist hidden-xs">
@@ -30,7 +33,7 @@ export default class Featurelist extends React.Component {
                         world around you on Fakebook.
                     </h2>
                     <ul className="ds-btn hidden-xs">
-                        {rows}
+                        {this.renderFeatures()}
                     </ul>
                 </div>
             )
