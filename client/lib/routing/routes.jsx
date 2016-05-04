@@ -7,6 +7,7 @@ import React from 'react';
 import Sidebar from "../../components/sidebar/sidebar.jsx";
 import {Main} from "../../components/main/main.jsx";
 
+
 publicRoutes = FlowRouter.group({
     name:'publicroutes'
 });
