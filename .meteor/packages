@@ -24,3 +24,6 @@ twbs:bootstrap
 kadira:flow-router
 fortawesome:fontawesome
 momentjs:moment
+cfs:standard-packages
+cfs:filesystem
+react-meteor-data
