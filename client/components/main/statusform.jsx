@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 //import { FS } from 'meteor/cfs:standard-packages';
+import { FS } from 'meteor/cfs:base-package';
 import { Images } from '../../../both/collections/images';
 
 export default class Statusform extends Component {
